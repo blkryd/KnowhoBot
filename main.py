@@ -26,20 +26,20 @@ def start(client, message):
 def newbt(client,callback_query):
     txt=callback_query.data
     if txt=="about":
-        callback_query.message.edit(text=f"`Bot`            : [knowhobot](t.me/knowhobot)\n`Creator :` [agentnova](t.me/agentnova)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
+        callback_query.message.edit(text=f"`Bot`            : [HiddenInfo Bot]",
                         disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Give Feedback", url="t.me/agentnova")]]))
+            [[InlineKeyboardButton("Give Feedback", url="t.me/blkryd")]]))
     elif txt=="src":
-        callback_query.message.edit(text="Enjoy...:-D\nhttps://github.com/agentnova/KnowhoBot", disable_web_page_preview=True)
+        callback_query.message.edit(text="Enjoy...:-D\nhttps://github.com/blkryd/KnowhoBot", disable_web_page_preview=True)
 
 
 
 @app.on_message(filters.command(["about"]))
 def about(client, message):
     client.send_message(chat_id=message.chat.id, reply_to_message_id=message.message_id,
-                        text=f"`Bot`            : [knowhobot](t.me/knowhobot)\n`Creator :` [agentnova](t.me/agentnova)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/) \n`Server  :` [Heroku](https://herokuapp.com/)",
+                        text=f"`Bot`            : [knowhobot]",
                         disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Feedback", url="t.me/agentnova")]]))
+            [[InlineKeyboardButton("Feedback", url="t.me/blkryd")]]))
 
 
 @app.on_message(filters.command(["log"]))
@@ -61,12 +61,12 @@ def echo(client, message):
     pq = ""
     pro = client.send_message(chat_id=message.chat.id, text="Searching...", reply_to_message_id=message.message_id)
     r_num = message.text
-    num = r_num.replace("+91", "").replace(" ", "")
+    num = r_num.replace("+88", "").replace(" ", "")
     frbseyename = ""
     frbsefb = ""
     frbsetrname = ""
     frbsetrmail = ""
-    if num.isnumeric and len(num) == 10:
+    if num.isnumeric and len(num) == 11:
         pq = "\n\n**----••Truecaller says----**\n\nLimit exceeded ,try again tomorrow 🤦🏻‍♂️"
         tresponse = ""
         try:
@@ -169,7 +169,7 @@ def echo(client, message):
             firebase.put('/knowho-log', num, data)
 
     else:
-        pro.edit("`Only` **10** `digit numbers allowed` 🤦🏻‍♂️")
+        pro.edit("`Only` **11** `digit numbers allowed` 🤦🏻‍♂️")
 
 
 app.run()

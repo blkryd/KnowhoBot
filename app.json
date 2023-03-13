@@ -1,8 +1,8 @@
 {
-  "name": "Knowho bot",
-  "description": "A telegram bot which gather information about an indian phone number(Gather results from both Truecaller and eyecon)",
-  "repository": "https://github.com/agentnova/KnowhoBot",
-  "logo": "https://raw.githubusercontent.com/agentnova/KnowhoBot/master/logo.jpg",
+  "name": "HiddenInfo Bot",
+  "description": "A telegram bot which gather information about BD phone number(Gather results from both Truecaller and eyecon)",
+  "repository": "https://github.com/blkryd/KnowhoBot",
+  "logo": "https://raw.githubusercontent.com/blkryd/KnowhoBot/master/logo.jpg",
   "keywords": ["Truecaller","telegram","telegram bot","bot","pyrogram","knowho bot","information gathering"],
   "env": {
     "BOT_TOKEN": {
@@ -22,7 +22,7 @@
       "value": ""
     },
     "T_AUTH": {
-      "description": "Your Truecaller auth_id from truecaller app request headers",
+      "description": "Your Truecaller authentication from truecaller app request headers",
       "value": ""
     },
     "E_AUTH": {
